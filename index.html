@@ -103,6 +103,65 @@
           </ul>
         </section>
         <section id="table" class="reservation"></section>
+        <h2 class="reservation__title">Book a table</h2>
+        <form class="reservation__form form">
+          <fieldset class="form__fieldset">
+            <label for="name_input" class="form__label">
+              Name *
+              <input
+                required
+                id="name_input"
+                type="text"
+                class="form__input"
+                placeholder="Name Surname"
+              />
+            </label>
+            <label for="guest_number" class="form__label">
+              Number of guests *
+              <input
+                required
+                id="guest_number"
+                type="number"
+                class="form__input"
+                min="1"
+                max="8"
+                placeholder="1-8"
+              />
+            </label>
+            <label for="date_time" class="form__label">
+              Date & time *
+              <input
+                required
+                id="date_time"
+                type="datetime-local"
+                class="form__input"
+                placeholder="mm/dd/yyyy"
+              />
+            </label>
+            <label for="email_input" class="form__label">
+              Your email *
+              <input
+                required
+                id="email_input"
+                type="email"
+                class="form__input"
+                placeholder="email@email.com"
+              />
+            </label>
+          </fieldset>
+          <button class="form__button">Book a table</button>
+          <label
+            for="button_input"
+            class="form__label form__label_type_checkbox"
+            >I agree with the terms of use
+            <input
+              required
+              id="button_input"
+              type="checkbox"
+              class="form__checkbox"
+            />
+          </label>
+        </form>
         <section id="menu" class="menu"></section>
         <section class="about"></section>
       </main>
