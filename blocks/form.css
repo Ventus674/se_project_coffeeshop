@@ -58,4 +58,5 @@
 .form__label_type_checkbox {
   display: flex;
   gap: 12px;
+  justify-content: center;
 }
